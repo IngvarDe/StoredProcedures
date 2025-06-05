@@ -132,7 +132,7 @@ namespace StoredProc.Controllers
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "dbo.spSearchEmployees";
+                cmd.CommandText = "dbo.spSearchEmployeesBadDynamicSQL";
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 con.Open();
                 SqlDataReader sdr = cmd.ExecuteReader();
